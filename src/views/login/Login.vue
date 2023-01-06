@@ -112,7 +112,7 @@ export default {
     // 点击登录发送请求
     async onSubmit() {
       let res = await this.$request(
-          "/educenter/member/login",
+          "/login",
           this.login,
           "post",
           "params"
@@ -158,7 +158,7 @@ export default {
     // 点击注册的回调
     async clickRegistered() {
       let res = await this.$request(
-          "/educenter/member/register",
+          "/register",
           this.registered,
           "post",
           "params"
